@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app='googleTest'>
+
+<head>
+</head>
+
+<body ng-controller='mainCtrl'>
+  Hello
+
+  {{test}}
+  <div id='placesRender' ng-repeat='place in places' >
+    {{place.name}}
+
+  </div>
+
+  <button ng-click='loadMorePlaces()'>MORE</button>
+
+  <img src='./powered_by_google_on_white.png'>
+
+
+
+
+
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtDf-pkeWjsWp1tSlznaikewCE-KNe5_M&libraries=places"></script> -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js'></script>
+
+<script src='js/app.js'></script>
+<script src='services/placesSvc.js'></script>
+<script src='features/places/placesCtrl.js'></script>
+
+</body>
+
+</html>
